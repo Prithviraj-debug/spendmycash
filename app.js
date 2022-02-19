@@ -26,9 +26,10 @@ for (var i = 0; i < buyBtns.length; i++) {
     button.addEventListener('click', buyBtnClicked)
 }
 
-function snackBar() {
+function snackBar(asd) {
     // Get the snackbar DIV
     var x = document.getElementById("snackbar");
+    var afford = x.innerHTML = asd
   
     // Add the "show" class to DIV
     x.className = "show";
@@ -47,11 +48,12 @@ function buyBtnClicked(event) {
     
     if (balAval <= 0) {
         amount.classList.add('nobal')
-        snackBar()
+        // x.innerText = "asda"
+        snackBar("Out of Balance!")
     } 
     else {
         if (balAval < prize) {
-            alert("You cannot afford this!")
+            snackBar("You cannot afford this!")
 
         } 
         else {
