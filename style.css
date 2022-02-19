@@ -39,7 +39,7 @@ h2.amount {
     width: 400px;
 }
 
-.price {
+em {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;

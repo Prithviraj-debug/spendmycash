@@ -10,7 +10,7 @@ const buildItem = (item) => {
     <div class="item">
     <title>${item.name}</title>
     <img src="${item.img}" alt="">
-    <em class="price">Price: &#8377; ${item.price}</em>
+    <em>Price: &#8377;<em class="price">${item.price}</em></em>
     <button class="buy">Buy</button>
     </div>
     `
